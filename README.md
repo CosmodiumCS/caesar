@@ -50,19 +50,15 @@ N - # of indexes that we need to replace [shift key]
 Encryption:
 
 		Uppercase: 
-
-                plaintext += chr((ord(letter) + shift - 65) % 26 + 65)
+                	plaintext += chr((ord(letter) + shift - 65) % 26 + 65)
 		Lowercase: 
-
-                plaintext += chr((ord(letter) + shift - 97) % 26 + 97)
+                	plaintext += chr((ord(letter) + shift - 97) % 26 + 97)
 Decryption:
 
 		Uppercase: 
-
-                ciphertext += chr((ord(letter) - shift - 65) % 26 + 65)
+                	ciphertext += chr((ord(letter) - shift - 65) % 26 + 65)
 		Lowercase: 
-
-                ciphertext += chr((ord(letter) - shift - 97) % 26 + 97)
+                	ciphertext += chr((ord(letter) - shift - 97) % 26 + 97)
 ```
 ord() - matches character to Unicode index
 
